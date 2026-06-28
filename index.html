@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrasi PIKNIK KYO 2026</title>
+
+    <meta name="description"
+        content="Informasi Administrasi PIKNIK KYO 2026 Pemuda Pemudi Dusun Klebon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="bg-slate-100 text-slate-800">
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b mb-6">
+
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+
+        <h2 class="font-bold text-blue-600">
+            🏕️ PIKNIK KYO 2026
+        </h2>
+
+        <div class="hidden md:flex gap-6 text-sm">
+
+            <a href="#statistik">Statistik</a>
+            <a href="#table">Peserta</a>
+            <a href="#chart">Grafik</a>
+
+        </div>
+
+    </div>
+
+</nav>
+    <div class="container mx-auto max-w-7xl px-4 py-8">
+
+        <!-- HEADER -->
+        <header class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl shadow-xl p-6 mb-6">
+
+            <div class="flex justify-between items-center">
+
+                <div>
+
+                    <h1 class="text-3xl md:text-4xl font-extrabold">
+                    🏕️ PIKNIK KYO 2026
+                    </h1>
+
+                    <p class="text-blue-100 mt-2">
+                        Administrasi Pemuda/Pemudi Dusun Klebon
+                    </p>
+
+                </div>
+
+                <button id="darkMode"
+                    class="bg-slate-200 hover:bg-slate-300 px-4 py-2 rounded-xl">
+                    🌙
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- STATISTIK -->
+        <section id="statistik"
+            class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-6">
+
+        </section>
+
+        <!-- PROGRESS -->
+        <section class="bg-white rounded-2xl shadow p-6 mb-6">
+
+            <div class="flex justify-between mb-2">
+
+                <h2 class="font-bold">
+                    Progress Pembayaran
+                </h2>
+
+                <span id="progressText">
+                    0%
+                </span>
+
+            </div>
+
+            <div class="w-full bg-slate-200 rounded-full h-4">
+
+                <div id="progressBar"
+                    class="bg-blue-600 h-4 rounded-full"
+                    style="width:0%">
+
+                </div>
+
+            </div>
+
+        </section>
+<section id="summary" class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-6">
+
+    <div class="bg-white rounded-2xl shadow p-5">
+        <p class="text-slate-500">Target Dana</p>
+        <h2 id="targetDana" class="text-2xl font-bold"></h2>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-5">
+        <p class="text-slate-500">Dana Masuk</p>
+        <h2 id="danaMasuk" class="text-2xl font-bold text-green-600"></h2>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-5">
+        <p class="text-slate-500">Sisa Tagihan</p>
+        <h2 id="sisaDana" class="text-2xl font-bold text-red-600"></h2>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow p-5">
+        <p class="text-slate-500">Persentase</p>
+        <h2 id="persentaseDana" class="text-2xl font-bold text-blue-600"></h2>
+    </div>
+
+</section>
+        <!-- SEARCH -->
+<div class="flex flex-wrap gap-3 mb-6">
+
+    <button id="btnPrint"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl">
+        🖨 Print
+    </button>
+
+    <button id="btnTop"
+        class="bg-slate-700 hover:bg-slate-800 text-white px-5 py-3 rounded-xl">
+        ⬆ Atas
+    </button>
+
+</div>
+        <section class="bg-white rounded-2xl shadow p-6 mb-6">
+
+            <div class="grid md:grid-cols-2 gap-4">
+
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="Cari nama..."
+                    class="border rounded-xl p-3 outline-none">
+
+                <select
+                    id="filter"
+                    class="border rounded-xl p-3">
+
+                    <option value="all">Semua</option>
+                    <option value="lunas">Lunas</option>
+                    <option value="belum">Belum Lunas</option>
+                    <option value="cash">Cash</option>
+                    <option value="tf">Transfer</option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <!-- TABLE -->
+
+        <section id="table" class="bg-white rounded-2xl shadow overflow-hidden mb-6">
+
+            <div class="overflow-auto">
+
+                <table class="w-full">
+
+                    <thead class="bg-blue-600 text-white">
+
+                        <tr>
+
+                            <th class="p-3">Nama</th>
+                            <th>Jumlah</th>
+                            <th>Pembayaran</th>
+                            <th>Kurang</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tableData">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- CHART -->
+<div id="modal"
+class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-2xl w-full max-w-md p-6">
+
+        <div class="flex justify-between mb-5">
+
+            <h2 class="text-xl font-bold">
+                Detail Peserta
+            </h2>
+
+            <button id="closeModal">
+                ✖
+            </button>
+
+        </div>
+
+        <div id="modalBody"></div>
+
+    </div>
+
+</div>
+        <section id="chart" class="grid lg:grid-cols-2 gap-6 mb-6">
+
+            <div class="bg-white rounded-2xl shadow p-6">
+
+                <canvas id="pieChart"></canvas>
+
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-6">
+
+                <canvas id="barChart"></canvas>
+
+            </div>
+
+        </section>
+
+    </div>
+<footer class="mt-12 text-center text-slate-500 text-sm py-8">
+
+    <p>
+        © 2026 PIKNIK KYO
+    </p>
+
+    <p class="mt-2">
+        Pemuda/Pemudi Dusun Klebon
+    </p>
+
+    <p class="mt-2">
+        Last Update :
+        <span id="lastUpdate"></span>
+    </p>
+
+</footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

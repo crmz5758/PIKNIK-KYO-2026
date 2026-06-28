@@ -1,0 +1,29 @@
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,Arial,sans-serif;
+    transition:.3s;
+}
+
+table tr{
+    transition:.2s;
+}
+
+.card{
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:20px;
+}
