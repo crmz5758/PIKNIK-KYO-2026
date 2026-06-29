@@ -375,3 +375,11 @@ const logKeluar = [
         keperluan: "Tol"
     }
 ];
+renderLogMasuk();
+renderLogKeluar();
+
+document.getElementById("jumlahLogMasuk").textContent =
+`${logMasuk.length} Transaksi`;
+
+document.getElementById("jumlahLogKeluar").textContent =
+`${logKeluar.length} Transaksi`;
