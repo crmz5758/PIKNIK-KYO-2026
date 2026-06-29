@@ -148,7 +148,7 @@ keterangan:"Cash"
 nama:"Herwan",
 jumlah:2,
 tagihan:300000,
-bayar:100000,
+bayar:300000,
 metode:"Cash",
 keterangan:"Cash"
 },
@@ -385,11 +385,11 @@ const logMasuk = [
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-27",
+        tanggal: "2026-06-29",
         nama: "Herwan",
-        jumlah: 100000,
+        jumlah: 300000,
         metode: "Cash",
-        keterangan: "DP"
+        keterangan: "Lunas"
     },
     {
         tanggal: "2026-06-27",
