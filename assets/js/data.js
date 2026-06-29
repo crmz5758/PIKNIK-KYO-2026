@@ -436,24 +436,9 @@ const logMasuk = [
 ];
 const logKeluar = [
     {
-        tanggal: "2026-06-10",
-        jumlah: 250000,
-        keperluan: "Booking Bus"
-    },
-    {
-        tanggal: "2026-06-12",
-        jumlah: 175000,
-        keperluan: "Konsumsi"
-    },
-    {
-        tanggal: "2026-06-15",
-        jumlah: 80000,
-        keperluan: "Tol"
-    },
-    {
-        tanggal: "2026-06-18",
-        jumlah: 50000,
-        keperluan: "Parkir"
+        tanggal: "2026-06-27",
+        jumlah: 0,
+        keperluan: "Belum Ada"
     }
 ];
 renderLogMasuk();
