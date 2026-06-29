@@ -13,8 +13,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
@@ -32,7 +30,8 @@
 
             <a href="#statistik">Statistik</a>
             <a href="#table">Peserta</a>
-            <a href="#chart">Grafik</a>
+            <a href="#table">Peserta</a>
+<a href="#transaksi">Transaksi</a>
 
         </div>
 
@@ -194,7 +193,7 @@
 
         </section>
 
-        <!-- CHART -->
+        <!-- MODAL DETAIL -->
 <div id="modal"
 class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
 
@@ -218,7 +217,7 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
 
 </div>
     <!-- LOG TRANSAKSI -->
-<section class="grid lg:grid-cols-2 gap-6 mt-6">
+<section id="transaksi" class="grid lg:grid-cols-2 gap-6 mt-6">
 
     <!-- LOG MASUK -->
     <div class="bg-white rounded-2xl shadow">
@@ -227,7 +226,9 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
             <h2 class="font-bold text-lg flex justify-between items-center">
 
     <span>💰 Log Uang Masuk</span>
-
+<p class="text-xs text-slate-500 mt-1">
+Riwayat seluruh pembayaran peserta
+</p>
     <span id="jumlahLogMasuk"
         class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
     </span>
@@ -267,7 +268,9 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
             <h2 class="font-bold text-lg flex justify-between items-center">
 
     <span>💸 Log Uang Keluar</span>
-
+<p class="text-xs text-slate-500 mt-1">
+Riwayat seluruh pengeluaran kegiatan
+</p>
     <span id="jumlahLogKeluar"
         class="text-xs bg-red-100 text-red-700 px-3 py-1 rounded-full">
     </span>
@@ -301,23 +304,27 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
 </section>
 
     </div>
-<footer class="mt-12 text-center text-slate-500 text-sm py-8">
+<footer class="mt-12 border-t bg-white">
 
-    <p>
-        © 2026 KYO
-    </p>
+    <div class="max-w-7xl mx-auto px-4 py-8 text-center">
 
-    <p class="mt-2">
-        Pemuda/Pemudi Dusun Klebon
-    </p>
+        <h3 class="font-bold text-lg">
+            🏕️ PIKNIK KYO 2026
+        </h3>
 
-    <p class="mt-2">
-        Last Update :
-        <span id="lastUpdate"></span>
-    </p>
+        <p class="text-slate-500 mt-2">
+            Administrasi Pemuda/Pemudi Dusun Klebon
+        </p>
+
+        <p class="text-slate-400 text-sm mt-4">
+            Last Update :
+            <span id="lastUpdate"></span>
+        </p>
+
+    </div>
 
 </footer>
-
+    
     <script src="assets/js/data.js"></script>
     <script src="assets/js/app.js"></script>
 
