@@ -385,13 +385,6 @@ const logMasuk = [
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-29",
-        nama: "Herwan",
-        jumlah: 300000,
-        metode: "Cash",
-        keterangan: "Lunas"
-    },
-    {
         tanggal: "2026-06-27",
         nama: "Okta",
         jumlah: 450000,
@@ -432,6 +425,13 @@ const logMasuk = [
         jumlah: 75000,
         metode: "Transfer",
         keterangan: "DP"
+    },
+    {
+        tanggal: "2026-06-29",
+        nama: "Herwan",
+        jumlah: 300000,
+        metode: "Cash",
+        keterangan: "Lunas"
     }
 ];
 const logKeluar = [
