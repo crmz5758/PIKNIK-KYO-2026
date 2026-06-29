@@ -26,7 +26,7 @@
             🏕️ PIKNIK KYO 2026
         </h2>
 
-        <div class="hidden md:flex gap-6 text-sm">
+        <div class="flex gap-6 text-sm overflow-x-auto whitespace-nowrap">
 
             <a href="#statistik">Statistik</a>
             <a href="#table">Peserta</a>
@@ -38,12 +38,12 @@
     </div>
 
 </nav>
-    <div class="container mx-auto max-w-7xl px-4 py-8">
-
+    <div class="container mx-auto max-w-7xl px-3 md:px-4 py-6">
+        
         <!-- HEADER -->
         <header class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl shadow-xl p-6 mb-6">
 
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
 
                 <div>
 
@@ -68,7 +68,7 @@
 
         <!-- STATISTIK -->
         <section id="statistik"
-            class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-6">
+            class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 
         </section>
 
@@ -98,7 +98,8 @@
             </div>
 
         </section>
-<section id="summary" class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mb-6">
+<section id="summary"
+class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
 
     <div class="bg-white rounded-2xl shadow p-5">
         <p class="text-slate-500">Target Dana</p>
@@ -122,7 +123,7 @@
 
 </section>
         <!-- SEARCH -->
-<div class="flex flex-wrap gap-3 mb-6">
+<div class="grid grid-cols-2 md:flex gap-3 mb-6">
 
     <button id="btnPrint"
         class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl">
@@ -137,7 +138,7 @@
 </div>
         <section class="bg-white rounded-2xl shadow p-6 mb-6">
 
-            <div class="grid md:grid-cols-2 gap-4">
+            <div class="flex flex-col md:grid md:grid-cols-2 gap-4">
 
                 <input
                     id="search"
@@ -167,7 +168,7 @@
 
             <div class="overflow-auto">
 
-                <table class="w-full">
+                <table class="min-w-[700px] w-full">
 
                     <thead class="bg-blue-600 text-white">
 
@@ -217,8 +218,8 @@ class="hidden fixed inset-0 bg-black/50 flex items-center justify-center p-4">
 
 </div>
     <!-- LOG TRANSAKSI -->
-<section id="transaksi" class="grid lg:grid-cols-2 gap-6 mt-6">
-
+<section id="log" class="grid grid-cols-1 xl:grid-cols-2 gap-6 mt-6">
+    
     <!-- LOG MASUK -->
     <div class="bg-white rounded-2xl shadow">
 
@@ -238,7 +239,7 @@ Riwayat seluruh pembayaran peserta
 
         <div class="overflow-x-auto">
 
-            <table class="w-full text-sm">
+            <table class="min-w-[650px] w-full text-sm">
 
                 <thead class="bg-blue-600 text-white">
 
@@ -281,7 +282,7 @@ Riwayat seluruh pengeluaran kegiatan
 
         <div class="overflow-x-auto">
 
-            <table class="w-full text-sm">
+            <table class="min-w-[500px] w-full text-sm">
 
                 <thead class="bg-red-500 text-white">
 
