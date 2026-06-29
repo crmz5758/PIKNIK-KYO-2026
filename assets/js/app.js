@@ -42,7 +42,7 @@ document.getElementById("statistik").innerHTML = `
 <div class="bg-white rounded-2xl shadow p-5">
     <div class="text-3xl md:text-4xl mb-2">💰</div>
     <div class="text-slate-500">Total Dana</div>
-    <div class="text-xl md:text-2xl font-bold text-green-600 break-all leading-tight">
+    <div class="text-base md:text-2xl font-bold text-green-600 break-all leading-tight">
         ${rupiah(totalBayar)}
     </div>
 </div>
