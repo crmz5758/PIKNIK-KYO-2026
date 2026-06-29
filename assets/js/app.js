@@ -286,53 +286,78 @@ btnTop.onclick=()=>{
     });
 
 }
-// ===============================
-// CHART
-// ===============================
-
-const lunas = peserta.filter(x => x.bayar >= x.tagihan).length;
-const belum = peserta.length - lunas;
-
-new Chart(document.getElementById("pieChart"), {
-    type: "pie",
-    data: {
-        labels: ["Lunas", "Belum Lunas"],
-        datasets: [{
-            data: [lunas, belum]
-        }]
-    },
-    options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: "bottom"
-            }
-        }
-    }
-});
-
-const cash = peserta.filter(x => x.metode === "Cash").length;
-const tf = peserta.filter(x => x.metode === "Transfer").length;
-
-new Chart(document.getElementById("barChart"), {
-    type: "bar",
-    data: {
-        labels: ["Cash", "Transfer"],
-        datasets: [{
-            label: "Jumlah Peserta",
-            data: [cash, tf]
-        }]
-    },
-    options: {
-        responsive: true,
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
 document.getElementById("lastUpdate").innerHTML =
 new Date().toLocaleDateString("id-ID",{
     dateStyle:"full"
 });
+// ===============================
+// LOG UANG MASUK
+// ===============================
+
+function renderLogMasuk() {
+
+    const tbody = document.getElementById("logMasukTable");
+
+    tbody.innerHTML = "";
+
+    logMasuk.forEach(item => {
+
+        tbody.innerHTML += `
+            <tr class="border-b hover:bg-slate-50">
+
+                <td class="p-3">${item.tanggal}</td>
+
+                <td>${item.nama}</td>
+
+                <td>${rupiah(item.jumlah)}</td>
+
+                <td>
+                    <span class="px-2 py-1 rounded-lg text-white ${
+                        item.metode === "Transfer"
+                        ? "bg-blue-600"
+                        : "bg-green-600"
+                    }">
+                        ${item.metode}
+                    </span>
+                </td>
+
+                <td>${item.keterangan}</td>
+
+            </tr>
+        `;
+
+    });
+
+}
+
+// ===============================
+// LOG UANG KELUAR
+// ===============================
+
+function renderLogKeluar() {
+
+    const tbody = document.getElementById("logKeluarTable");
+
+    tbody.innerHTML = "";
+
+    logKeluar.forEach(item => {
+
+        tbody.innerHTML += `
+            <tr class="border-b hover:bg-slate-50">
+
+                <td class="p-3">${item.tanggal}</td>
+
+                <td>${rupiah(item.jumlah)}</td>
+
+                <td>${item.keperluan}</td>
+
+            </tr>
+        `;
+
+    });
+
+}
+
+renderLogMasuk();
+
+renderLogKeluar();
