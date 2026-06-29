@@ -34,13 +34,13 @@ const totalBelum = totalPeserta - totalLunas;
 
 document.getElementById("statistik").innerHTML = `
 <div class="bg-white rounded-2xl shadow p-5">
-    <div class="text-4xl mb-2">👥</div>
+    <div class="text-3xl md:text-4xl mb-2">👥</div>
     <div class="text-slate-500">Peserta</div>
-    <div class="text-3xl font-bold">${totalPeserta}</div>
+    <div class="text-2xl md:text-3xl font-bold">${totalPeserta}</div>
 </div>
 
 <div class="bg-white rounded-2xl shadow p-5">
-    <div class="text-4xl mb-2">💰</div>
+    <div class="text-3xl md:text-4xl mb-2">💰</div>
     <div class="text-slate-500">Total Dana</div>
     <div class="text-2xl font-bold text-green-600">
         ${rupiah(totalBayar)}
@@ -48,10 +48,10 @@ document.getElementById("statistik").innerHTML = `
 </div>
 
 <div class="bg-white rounded-2xl shadow p-5">
-    <div class="text-4xl mb-2">❌</div>
+    <div class="text-3xl md:text-4xl mb-2">❌</div>
     <div class="text-slate-500">Belum Lunas</div>
 
-<div class="text-3xl font-bold text-amber-500">
+<div class="text-2xl md:text-3xl font-bold text-amber-500">
     ${totalBelum}
 </div>
 
@@ -61,9 +61,9 @@ document.getElementById("statistik").innerHTML = `
 </div>
 
 <div class="bg-white rounded-2xl shadow p-5">
-    <div class="text-4xl mb-2">✅</div>
+    <div class="text-3xl md:text-4xl mb-2">✅</div>
     <div class="text-slate-500">Sudah Lunas</div>
-    <div class="text-3xl font-bold">
+    <div class="text-2xl md:text-3xl font-bold">
         ${totalLunas}
     </div>
 </div>
