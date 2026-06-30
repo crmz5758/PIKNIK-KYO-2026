@@ -238,7 +238,6 @@ nama:"Rini",
 jumlah:1,
 tagihan:150000,
 bayar:150000,
-donasi:50000,
 metode:"Transfer",
 keterangan:"Transfer + Donasi 50.000"
 },
