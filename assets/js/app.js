@@ -14,7 +14,7 @@ const rupiah = (angka) => {
 // HITUNG DATA
 // ===============================
 
-const totalPeserta = peserta.reduce((total, item) => total + item.jumlah, 0);
+const totalPeserta = peserta.length;
 
 const totalTagihan = peserta.reduce((a, b) => a + b.tagihan, 0);
 
@@ -25,10 +25,6 @@ const totalKurang = totalTagihan - totalBayar;
 const totalLunas = peserta.filter(x => x.bayar >= x.tagihan).length;
 
 const progress = Math.round((totalBayar / totalTagihan) * 100);
-
-const totalLunas = peserta
-    .filter(x => x.bayar >= x.tagihan)
-    .reduce((total, item) => total + item.jumlah, 0);
 
 const totalBelum = totalPeserta - totalLunas;
 
