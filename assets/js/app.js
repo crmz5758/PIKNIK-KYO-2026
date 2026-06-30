@@ -14,7 +14,7 @@ const rupiah = (angka) => {
 // HITUNG DATA
 // ===============================
 
-const totalPeserta = peserta.length;
+const totalPeserta = peserta.reduce((total, item) => total + item.jumlah, 0);
 
 const totalTagihan = peserta.reduce((a, b) => a + b.tagihan, 0);
 
