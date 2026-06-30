@@ -434,7 +434,7 @@ const logMasuk = [
         keterangan: "Lunas"
     },
     {
-    tanggal:"2026-06-20",
+    tanggal:"2026-06-30",
     nama:"Rini",
     jumlah:200000,
     metode:"Transfer",
