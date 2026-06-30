@@ -226,8 +226,8 @@ keterangan:"Cash"
 
 {
 nama:"Sigit",
-jumlah:1,
-tagihan:150000,
+jumlah:2,
+tagihan:300000,
 bayar:0,
 metode:"-",
 keterangan:""
@@ -237,9 +237,9 @@ keterangan:""
 nama:"Rini",
 jumlah:1,
 tagihan:150000,
-bayar:0,
+bayar:200000,
 metode:"-",
-keterangan:""
+keterangan:"TF"
 },
 
 {
@@ -430,6 +430,13 @@ const logMasuk = [
         tanggal: "2026-06-29",
         nama: "Herwan",
         jumlah: 300000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-06-30",
+        nama: "Rini",
+        jumlah: 200000,
         metode: "Cash",
         keterangan: "Lunas"
     }
