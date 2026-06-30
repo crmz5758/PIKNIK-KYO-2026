@@ -26,6 +26,10 @@ const totalLunas = peserta.filter(x => x.bayar >= x.tagihan).length;
 
 const progress = Math.round((totalBayar / totalTagihan) * 100);
 
+const totalLunas = peserta
+    .filter(x => x.bayar >= x.tagihan)
+    .reduce((total, item) => total + item.jumlah, 0);
+
 const totalBelum = totalPeserta - totalLunas;
 
 // ===============================
