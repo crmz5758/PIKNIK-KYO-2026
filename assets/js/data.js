@@ -239,8 +239,8 @@ jumlah:1,
 tagihan:150000,
 bayar:150000,
 donasi:50000,
-metode:"Cash",
-keterangan:"Cash + Donasi 50.000"
+metode:"Transfer",
+keterangan:"Transfer + Donasi 50.000"
 },
 
 {
@@ -438,8 +438,8 @@ const logMasuk = [
     tanggal:"2026-06-20",
     nama:"Rini",
     jumlah:200000,
-    metode:"Cash",
-    keterangan:"Lunas 150.000 + Donasi 50.000"
+    metode:"Transfer",
+    keterangan:"Lunas + Donasi 50.000"
     }
 ];
 const logKeluar = [
