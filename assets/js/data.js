@@ -277,16 +277,7 @@ bayar:300000,
 metode:"Cash",
 keterangan:"Cash 200.000 + Ambil Tabungan 100.000"
 },
-
-{
-nama:"Upik",
-jumlah:1,
-tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
-},
-
+    
 {
 nama:"Wawan",
 jumlah:3,
