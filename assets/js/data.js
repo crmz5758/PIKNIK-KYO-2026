@@ -130,9 +130,9 @@ keterangan:""
 nama:"Febri",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:40000,
+metode:"Transfer",
+keterangan:"TF"
 },
 
 {
@@ -235,8 +235,8 @@ keterangan:""
 
 {
 nama:"Rini",
-jumlah:1,
-tagihan:150000,
+jumlah:2,
+tagihan:300000,
 bayar:150000,
 metode:"Transfer",
 keterangan:"Transfer + Donasi 50.000"
@@ -429,7 +429,14 @@ const logMasuk = [
     nama:"Rini",
     jumlah:200000,
     metode:"Transfer",
-    keterangan:"Lunas + Donasi 50.000"
+    keterangan:"DP"
+    },
+    {
+    tanggal:"2026-06-2",
+    nama:"Febri",
+    jumlah:40000,
+    metode:"Transfer",
+    keterangan:"DP"
     }
 ];
 const logKeluar = [
