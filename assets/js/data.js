@@ -436,7 +436,7 @@ const logMasuk = [
     nama:"Rini",
     jumlah:350000,
     metode:"Transfer",
-    keterangan:"Transfer + Donasi 50000"
+    keterangan:"Transfer + Donasi 50.000"
     }
 ];
 const logKeluar = [
