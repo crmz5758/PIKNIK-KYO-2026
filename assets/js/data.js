@@ -180,12 +180,12 @@ metode:"-",
 keterangan:""
 },
 {
-nama:"L. Widodo",
+nama:"Lanjar Widodo",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -441,6 +441,13 @@ const logMasuk = [
     {
         tanggal:"2026-07-03",
         nama:"Dodo",
+        jumlah:150000,
+        metode:"Cash",
+        keterangan:"Lunas"
+    },
+    {
+        tanggal:"2026-07-03",
+        nama:"Lanjar Widodo",
         jumlah:150000,
         metode:"Cash",
         keterangan:"Lunas"
