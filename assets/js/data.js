@@ -94,9 +94,9 @@ keterangan:""
 nama:"Dodo",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -437,6 +437,13 @@ const logMasuk = [
         jumlah:350000,
         metode:"Transfer",
         keterangan:"Transfer + Donasi 50.000"
+    },
+    {
+        tanggal:"2026-07-03",
+        nama:"Dodo",
+        jumlah:150000,
+        metode:"Cash",
+        keterangan:"Lunas"
     }
 ];
 const logKeluar = [
