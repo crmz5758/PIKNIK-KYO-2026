@@ -257,7 +257,7 @@ jumlah:1,
 tagihan:150000,
 bayar:150000,
 metode:"Cash",
-keterangan:"Cash+Tabungan 100.000"
+keterangan:"Cash 50.000 + Tabungan 100.000"
 },
 
 {
