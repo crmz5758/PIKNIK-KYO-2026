@@ -103,9 +103,9 @@ keterangan:"Cash"
 nama:"Fachry",
 jumlah:1,
 tagihan:150000,
-bayar:75000,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -404,13 +404,6 @@ const logMasuk = [
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-28",
-        nama: "Fachry",
-        jumlah: 75000,
-        metode: "Transfer",
-        keterangan: "DP"
-    },
-    {
         tanggal: "2026-06-29",
         nama: "Herwan",
         jumlah: 300000,
@@ -464,6 +457,13 @@ const logMasuk = [
         nama: "Isma",
         jumlah: 150000,
         metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-05",
+        nama: "Fachry",
+        jumlah: 150000,
+        metode: "Transfer",
         keterangan: "Lunas"
     }
 ];
