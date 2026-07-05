@@ -121,7 +121,7 @@ keterangan:""
 nama:"Farel",
 jumlah:1,
 tagihan:150000,
-bayar:0,
+bayar:150000,
 metode:"-",
 keterangan:""
 },
@@ -166,9 +166,9 @@ keterangan:""
 nama:"Isma",
 jumlah:2,
 tagihan:300000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:300000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -448,6 +448,20 @@ const logMasuk = [
     {
         tanggal: "2026-07-04",
         nama: "Suryanto",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-05",
+        nama: "Farel",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-05",
+        nama: "Isma",
         jumlah: 150000,
         metode: "Cash",
         keterangan: "Lunas"
