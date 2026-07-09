@@ -201,18 +201,18 @@ keterangan:"TF"
 nama:"Nanda",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Transfer",
+keterangan:"TF + Ambil Tabungan 20.000"
 },
 
 {
 nama:"Nurul",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Transfer",
+keterangan:"TF"
 },
 
 {
@@ -318,9 +318,9 @@ keterangan:""
 nama:"Zildan",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Transfer",
+keterangan:"TF"
 }
 
 ];
@@ -460,10 +460,31 @@ const logMasuk = [
         keterangan: "Lunas"
     },
     {
-        tanggal: "2026-06-27",
+        tanggal: "2026-07-08",
         nama: "Arif",
         jumlah: 150000,
         metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-09",
+        nama: "Nanda",
+        jumlah: 150000,
+        metode: "Transfer",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-09",
+        nama: "Zildan",
+        jumlah: 150000,
+        metode: "Transfer",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-09",
+        nama: "Nurul",
+        jumlah: 150000,
+        metode: "Transfer",
         keterangan: "Lunas"
     }
 ];
