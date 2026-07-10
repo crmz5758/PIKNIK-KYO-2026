@@ -157,9 +157,9 @@ keterangan:"Cash"
 nama:"Irwan",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -485,6 +485,13 @@ const logMasuk = [
         nama: "Nurul",
         jumlah: 150000,
         metode: "Transfer",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-10",
+        nama: "Irwan",
+        jumlah: 150000,
+        metode: "Cash",
         keterangan: "Lunas"
     }
 ];
