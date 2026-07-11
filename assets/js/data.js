@@ -13,9 +13,9 @@ keterangan:"TF (sudah ditunaikan)"
 nama:"Alma",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Transfer",
+keterangan:"Transfer"
 },
 
 {
@@ -535,6 +535,13 @@ const logMasuk = [
         jumlah: 110000,
         metode: "Cash",
         keterangan: "DP"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Alma",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
     }
 ];
 const logKeluar = [
