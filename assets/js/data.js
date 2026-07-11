@@ -130,7 +130,7 @@ keterangan:""
 nama:"Febri",
 jumlah:1,
 tagihan:150000,
-bayar:40000,
+bayar:150000,
 metode:"Transfer",
 keterangan:"TF + Ambil Tabungan 110.000"
 },
