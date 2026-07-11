@@ -58,16 +58,16 @@ keterangan:"Cash"
 nama:"Dani",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
 nama:"Devan",
 jumlah:1,
 tagihan:150000,
-bayar:50000,
+bayar:150000,
 metode:"Cash",
 keterangan:"Cash"
 },
@@ -85,9 +85,9 @@ keterangan:""
 nama:"Dimas",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -112,9 +112,9 @@ keterangan:"Cash"
 nama:"Falih",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -132,7 +132,7 @@ jumlah:1,
 tagihan:150000,
 bayar:40000,
 metode:"Transfer",
-keterangan:"TF"
+keterangan:"TF + Ambil Tabungan 110.000"
 },
 
 {
@@ -175,9 +175,9 @@ keterangan:"Cash"
 nama:"Khansa",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Cash",
+keterangan:"Cash"
 },
 {
 nama:"L. Widodo",
@@ -282,9 +282,9 @@ keterangan:"Cash 200.000 + Ambil Tabungan 100.000"
 nama:"Wawan",
 jumlah:3,
 tagihan:450000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:450000,
+metode:"Cash",
+keterangan:"Cash"
 },
 
 {
@@ -309,9 +309,9 @@ keterangan:""
 nama:"Yuli",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:110000,
+metode:"Cash",
+keterangan:"Ambil Tabungan 110.000"
 },
 
 {
@@ -350,13 +350,6 @@ const logMasuk = [
     {
         tanggal: "2026-06-27",
         nama: "Cahyo",
-        jumlah: 50000,
-        metode: "Cash",
-        keterangan: "DP"
-    },
-    {
-        tanggal: "2026-06-27",
-        nama: "Devan",
         jumlah: 50000,
         metode: "Cash",
         keterangan: "DP"
@@ -406,9 +399,9 @@ const logMasuk = [
     {
         tanggal:"2026-07-02",
         nama:"Febri",
-        jumlah:40000,
+        jumlah:150000,
         metode:"Transfer",
-        keterangan:"DP"
+        keterangan:"Lunas"
     },
     {
         tanggal:"2026-07-02",
@@ -493,6 +486,55 @@ const logMasuk = [
         jumlah: 150000,
         metode: "Cash",
         keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Wawan",
+        jumlah: 450000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Devan",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Dimas",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Falih",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Dani",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Khansa",
+        jumlah: 150000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-11",
+        nama: "Yuli",
+        jumlah: 110000,
+        metode: "Cash",
+        keterangan: "DP"
     }
 ];
 const logKeluar = [
