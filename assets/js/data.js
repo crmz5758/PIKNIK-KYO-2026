@@ -40,9 +40,9 @@ keterangan:"Cash + Ambil Tabungan 50.000"
 nama:"Bowo",
 jumlah:2,
 tagihan:300000,
-bayar:230000,
+bayar:300000,
 metode:"Cash",
-keterangan:"Cash 150.000 + Ambil Tabungan 80.000"
+keterangan:"Cash 220.000 + Ambil Tabungan 80.000"
 },
 
 {
@@ -342,13 +342,6 @@ const logMasuk = [
     },
     {
         tanggal: "2026-06-27",
-        nama: "Bowo",
-        jumlah: 230000,
-        metode: "Cash",
-        keterangan: "DP"
-    },
-    {
-        tanggal: "2026-06-27",
         nama: "Cahyo",
         jumlah: 50000,
         metode: "Cash",
@@ -549,13 +542,25 @@ const logMasuk = [
         jumlah: 150000,
         metode: "Transfer",
         keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-12",
+        nama: "Bowo",
+        jumlah: 300000,
+        metode: "Cash",
+        keterangan: "Lunas"
     }
 ];
 const logKeluar = [
     {
-        tanggal: "2026-06-27",
-        jumlah: 0,
-        keperluan: "Belum Ada"
+        tanggal: "2026-07-12",
+        jumlah: 4000000,
+        keperluan: "Pembayaran Transport Bus"
+    },
+    {
+        tanggal: "2026-07-12",
+        jumlah: 1250000,
+        keperluan: "Pembayaran Konsumsi Peserta"
     }
 ];
 renderLogMasuk();
