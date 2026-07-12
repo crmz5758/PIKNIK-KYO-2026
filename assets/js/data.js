@@ -246,7 +246,7 @@ keterangan:"Transfer"
 nama:"Rizky",
 jumlah:1,
 tagihan:150000,
-bayar:50000,
+bayar:150000,
 metode:"Transfer",
 keterangan:"Transfer"
 },
@@ -544,9 +544,9 @@ const logMasuk = [
     {
         tanggal: "2026-07-12",
         nama: "Rizky",
-        jumlah: 50000,
+        jumlah: 150000,
         metode: "Transfer",
-        keterangan: "DP"
+        keterangan: "Lunas"
     },
      {
         tanggal: "2026-07-12",
