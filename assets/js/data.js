@@ -552,7 +552,7 @@ const logMasuk = [
         tanggal: "2026-07-12",
         nama: "Rizky",
         jumlah: 50000,
-        metode: "Cash",
+        metode: "Transfer",
         keterangan: "DP"
     }
 ];
