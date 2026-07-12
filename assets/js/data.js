@@ -261,15 +261,6 @@ keterangan:"Cash 50.000 + Tabungan 100.000"
 },
 
 {
-nama:"Syifa",
-jumlah:1,
-tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
-},
-
-{
 nama:"Tesa",
 jumlah:2,
 tagihan:300000,
@@ -300,9 +291,9 @@ keterangan:"Cash"
 nama:"Yusuf",
 jumlah:1,
 tagihan:150000,
-bayar:0,
-metode:"-",
-keterangan:""
+bayar:150000,
+metode:"Transfer",
+keterangan:"Transfer"
 },
 
 {
@@ -549,6 +540,20 @@ const logMasuk = [
         jumlah: 300000,
         metode: "Cash",
         keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-12",
+        nama: "Yusuf",
+        jumlah: 150000,
+        metode: "Transfer",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-12",
+        nama: "Rizky",
+        jumlah: 50000,
+        metode: "Cash",
+        keterangan: "DP"
     }
 ];
 const logKeluar = [
