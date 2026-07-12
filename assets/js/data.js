@@ -555,13 +555,13 @@ const logKeluar = [
     {
         tanggal: "2026-07-12",
         jumlah: 4000000,
-        Metode: "Cash",
+        metode: "Cash",
         keperluan: "Pembayaran Transport Bus"
     },
     {
         tanggal: "2026-07-12",
         jumlah: 1250000,
-        Metode: "Cash",
+        metode: "Cash",
         keperluan: "Pembayaran Konsumsi Peserta"
     }
 ];
