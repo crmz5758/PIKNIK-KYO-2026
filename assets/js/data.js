@@ -300,9 +300,9 @@ keterangan:"Transfer"
 nama:"Yuli",
 jumlah:1,
 tagihan:150000,
-bayar:110000,
+bayar:150000,
 metode:"Cash",
-keterangan:"Ambil Tabungan 110.000"
+keterangan:"Cash 40.000 + Ambil Tabungan 110.000"
 },
 
 {
@@ -501,13 +501,6 @@ const logMasuk = [
     },
     {
         tanggal: "2026-07-11",
-        nama: "Yuli",
-        jumlah: 110000,
-        metode: "Cash",
-        keterangan: "DP"
-    },
-    {
-        tanggal: "2026-07-11",
         nama: "Alma",
         jumlah: 150000,
         metode: "Cash",
@@ -559,6 +552,13 @@ const logMasuk = [
         tanggal: "2026-07-13",
         nama: "Sigit",
         jumlah: 300000,
+        metode: "Cash",
+        keterangan: "Lunas"
+    },
+    {
+        tanggal: "2026-07-13",
+        nama: "Yuli",
+        jumlah: 150000,
         metode: "Cash",
         keterangan: "Lunas"
     }
